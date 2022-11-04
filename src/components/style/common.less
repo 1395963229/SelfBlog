@@ -1,0 +1,15 @@
+//在盒子里水平垂直居中
+.self-center(@p:absolute) {
+  position: @p;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+//占满显示
+.self-fill(@p:absolute) {
+  position: @p;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
