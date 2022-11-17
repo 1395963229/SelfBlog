@@ -1,0 +1,31 @@
+@import "../style/common.less";
+@import "../style/var.less";
+.message {
+  .self-center(fixed);
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
+  padding: 10px 30px;
+  border-radius: 5px;
+  display: flex;
+  line-height: 2em;
+  color: @white;
+  transform: translate(-50%, -50%) translateY(30px);
+  transition:.3s;
+  opacity: 0;
+  white-space: nowrap;
+}
+&.info {
+  background-color: @primary;
+}
+&.success {
+  background-color: @success;
+}
+&.error {
+  background-color: @danger;
+}
+&.warn {
+  background-color: @warn;
+}
+.icon {
+  font-size: 20px;
+  margin-right: 7px;
+}
